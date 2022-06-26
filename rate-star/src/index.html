@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap">
+  <title>Rate Star - Tailwind.css</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="">
+  <div class="bg-black min-h-full flex items-center justify-center flex-wrap text-white">
+    <div class="w-[420px] h-[420px] bg-gray-800 rounded-[20px] p-[32px]">
+      <div class="icon-star w-[50px] h-[50px] rounded-full flex items-center justify-center bg-gray-700">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+      </div>
+      <h1 class="mt-[30px] text-2xl">How did we do?</h1>
+      <h3 class="mt-[10px] text-md text-gray-400 leading-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</h3>
+      <ul class="flex pt-[30px] justify-between">
+        <li class="h-[50px] w-[50px] rounded-full text-center bg-gray-600 leading-[50px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">1</li>
+        <li class="h-[50px] w-[50px] rounded-full text-center bg-gray-600 leading-[50px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">2</li>
+        <li class="h-[50px] w-[50px] rounded-full text-center bg-gray-600 leading-[50px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">3</li>
+        <li class="h-[50px] w-[50px] rounded-full text-center bg-gray-600 leading-[50px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">4</li>
+        <li class="h-[50px] w-[50px] rounded-full text-center bg-gray-600 leading-[50px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">5</li>
+      </ul>
+      <a href="" class="font-medium h-[40px] rounded-full block w-full text-center leading-[40px] bg-gray-500 mt-[30px] hover:bg-white hover:text-orange-500">SUBMIT</a>
+    </div>
+  </div>
+  <div class="bg-black min-h-full flex items-center justify-center flex-wrap hidden">
+    <div class="w-[410px] h-[410px] bg-gray-800 rounded-[20px] ">
+      <div class="icon-cellphome"></div>
+      <div>You selected 4 out of 5</div>
+      <h1>Thank you!</h1>
+      <h3>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</h3>
+    </div>
+  </div>
+</body>
+</html>
