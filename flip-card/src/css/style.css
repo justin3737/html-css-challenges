@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#card-container {
+  font-family: "Source Code Pro", sans-serif;
+}
+
+.card {
+  @apply absolute bg-cover w-full h-full rounded-[15px] text-white transform;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.input-active {
+  @apply bg-sky-700/30 rounded-[5px] border-white/30 border-2;
+}
+
+/*卡片LOGO樣式*/
+.bg-amex {
+  height: 60px;
+  width: 100px;
+  right: 20px;
+}
+.bg-mac {
+  height: 55px;
+}
+.bg-unpay {
+  height: 45px;
+}
+
+
+/*翻轉屬性*/
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.transform-style-3d:hover,
+.transform-rotateY-180,
+.flip-back {
+  transform: rotateY(180deg);
+}
