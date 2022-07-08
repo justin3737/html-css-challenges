@@ -21,13 +21,28 @@
       </div>
       <h1 class="mt-[30px] xs:mt-[20px] text-2xl">How did we do?</h1>
       <h3 class="mt-[10px] text-md xs:text-sm text-gray-400 leading-6  xs:leading-5">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</h3>
-      <ul class="flex pt-[30px] justify-between">
-        <li class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">1</li>
-        <li class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">2</li>
-        <li class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">3</li>
-        <li class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">4</li>
-        <li class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">5</li>
-      </ul>
+      <div class="flex pt-[30px] justify-between">
+        <input type="radio" name="score" class="hidden" id="one" value="1"/>
+        <label for="one">
+          <div class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">1</div>
+        </label>
+        <input type="radio" name="score" class="hidden" id="two" value="2"/>
+        <label for="two">
+          <div class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">2</div>
+        </label>
+        <input type="radio" name="score" class="hidden" id="three" value="3"/>
+        <label for="three">
+          <div class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">3</div>
+        </label>
+        <input type="radio" name="score" class="hidden" id="four" value="4"/>
+        <label for="four">
+          <div class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">4</div>
+        </label>
+        <input type="radio" name="score" class="hidden" id="five" value="5"/>
+        <label for="five">
+          <div class="rate_btn h-[50px] w-[50px] xs:w-[40px] xs:h-[40px] rounded-full text-center bg-gray-600 leading-[50px] xs:leading-[40px] text-gray-200 hover:bg-gray-400 cursor-pointer active:bg-orange-500">5</div>
+        </label>
+      </div>
       <button id="submit" class="font-medium h-[40px] rounded-full block w-full text-center leading-[40px] bg-gray-500 mt-[30px] hover:bg-white hover:text-orange-500">SUBMIT</button>
     </div>
     <div id="result_view" class="w-[410px] h-[410px] xs:w-[328px] xs:h-[360px] bg-gray-800 rounded-[20px] p-[32px] flex-col justify-center items-center text-center hidden">
