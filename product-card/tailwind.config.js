@@ -3,6 +3,11 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      'ssm': {
+        'max': '375px'
+      }
+    },
     extend: {
       colors: {
         'green': 'hsl(158, 36%, 37%)',

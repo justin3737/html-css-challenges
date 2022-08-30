@@ -630,6 +630,14 @@ video {
   background-size: contain;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-\[30px\] {
   padding: 30px;
 }
@@ -694,4 +702,62 @@ video {
 .hover\:bg-green-darker:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(158 36% 17% / var(--tw-bg-opacity));
+}
+
+@media (max-width: 375px) {
+  .ssm\:h-\[\] {
+    height: ;
+  }
+
+  .ssm\:h-\[240px\] {
+    height: 240px;
+  }
+
+  .ssm\:h-\[610px\] {
+    height: 610px;
+  }
+
+  .ssm\:h-\[370px\] {
+    height: 370px;
+  }
+
+  .ssm\:w-full {
+    width: 100%;
+  }
+
+  .ssm\:w-\[340px\] {
+    width: 340px;
+  }
+
+  .ssm\:flex-col {
+    flex-direction: column;
+  }
+
+  .ssm\:bg-mobile {
+    background-image: url('../img/image-product-mobile.jpg');
+  }
+
+  .ssm\:p-\[20px\] {
+    padding: 20px;
+  }
+
+  .ssm\:pb-\[10px\] {
+    padding-bottom: 10px;
+  }
+
+  .ssm\:pb-\[20px\] {
+    padding-bottom: 20px;
+  }
+
+  .ssm\:text-\[2\2CApx\] {
+    font-size: 2ˊpx;
+  }
+
+  .ssm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .ssm\:text-\[27px\] {
+    font-size: 27px;
+  }
 }
