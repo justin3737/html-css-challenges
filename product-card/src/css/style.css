@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.product-type {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-name {
+  font-family: "Fraunces", sans-serif;
+}

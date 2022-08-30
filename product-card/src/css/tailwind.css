@@ -551,24 +551,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-\[30px\] {
-  margin: 30px;
+.mr-\[15px\] {
+  margin-right: 15px;
 }
 
-.box-border {
-  box-sizing: border-box;
+.mt-\[12px\] {
+  margin-top: 12px;
 }
 
 .flex {
   display: flex;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-\[450px\] {
   height: 450px;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[40px\] {
+  height: 40px;
 }
 
 .w-\[600px\] {
@@ -579,16 +583,8 @@ video {
   width: 50%;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
-.origin-center {
-  transform-origin: center;
-}
-
-.flex-col {
-  flex-direction: column;
+.w-full {
+  width: 100%;
 }
 
 .items-center {
@@ -599,34 +595,16 @@ video {
   justify-content: center;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.bg-\[\#50d71e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(80 215 30 / var(--tw-bg-opacity));
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .bg-\[\#F3EAE3\] {
@@ -634,15 +612,86 @@ video {
   background-color: rgb(243 234 227 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: hsl(158 36% 37% / var(--tw-bg-opacity));
+}
+
+.bg-desktop {
+  background-image: url('../img/image-product-desktop.jpg');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
 .p-\[30px\] {
   padding: 30px;
 }
 
-.outline {
-  outline-style: solid;
+.pb-\[20px\] {
+  padding-bottom: 20px;
 }
 
-.outline-1 {
-  outline-width: 1px;
+.pb-\[30px\] {
+  padding-bottom: 30px;
 }
 
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-green {
+  --tw-text-opacity: 1;
+  color: hsl(158 36% 37% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.line-through {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.product-type {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-name {
+  font-family: "Fraunces", sans-serif;
+}
+
+.hover\:bg-green-darker:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(158 36% 17% / var(--tw-bg-opacity));
+}
