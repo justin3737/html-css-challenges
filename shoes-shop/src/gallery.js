@@ -12,5 +12,9 @@ function doMove(newIdx) {
   for(let i=0; i<imgWraps.length; i++) {
     let posX = (newIdx - i) * imageW * -1;
     imgWraps[i].style.transform = `translateX(${posX}px)`
+    btns[i].classList.add('opacity-50');
+    btns[i].classList.remove('border-4', 'rounded-xl', 'border-orange-400');
   }
+  btns[newIdx].classList.remove('opacity-50');
+  btns[newIdx].classList.add('border-4', 'rounded-xl', 'border-orange-400');
 }
