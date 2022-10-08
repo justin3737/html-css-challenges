@@ -1,0 +1,16 @@
+{
+  "name": "product-card",
+  "version": "1.0.0",
+  "description": "css challenge",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "NODE_ENV=production tailwindcss -i ./src/css/style.css -o ./src/css/tailwind.css --minify",
+    "watch": "tailwindcss -i ./src/css/style.css -o ./src/css/tailwind.css --watch",
+    "deploy": "npm run build && gh-pages -d src"
+  },
+  "author": "juns3700@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
