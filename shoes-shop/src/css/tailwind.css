@@ -609,6 +609,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-\[30px\] {
   margin-top: 30px;
 }
@@ -643,6 +653,10 @@ video {
 
 .mb-11 {
   margin-bottom: 2.75rem;
+}
+
+.mt-\[66px\] {
+  margin-top: 66px;
 }
 
 .block {
@@ -717,6 +731,10 @@ video {
   width: 60%;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -768,6 +786,10 @@ video {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
