@@ -8,95 +8,124 @@
   <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Fraunces:700">
 </head>
-<body>
-
-<div class="w-[1024px] m-auto">
+<body class="bg-orange-50">
+  <main>
   <!-- header -->
-  <div class="w-full h-[110px] border-b-2 border-gray-100 flex items-center">
-    <!-- logo -->
-    <div class="mr-[55px]">
-      <a href="#">
-        <img src="./img/logo.svg"/>
-      </a>
-    </div>
-    <!-- menu -->
-    <ul class="flex">
-      <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Collections</a></li>
-      <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Men</a></li>
-      <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Women</a></li>
-      <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">About</a></li>
-      <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Contact</a></li>
-    </ul>
-
-    <div class="flex flex-1 justify-end items-center">
-      <div class="mr-[45px]">
+  <header class="px-4 xl:block">
+    <nav class="flex justify-between items-center max-w-7xl m-auto py-6 border-b border-gray-300">
+      <!-- logo -->
+      <div class="mr-[55px]">
         <a href="#">
-          <img src="./img/icon-cart.svg">
+          <img src="./img/logo.svg"/>
         </a>
       </div>
-      <div class="w-[50px]">
-        <a href="#">
-          <img class="w-[50px]" src="./img/image-avatar.png">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- container -->
-  <div class="w-full m-auto flex justify-between mt-[90px]">
-    <!--gallery-->
-    <div class="w-[450px]">
-      <div class="w-[450px] h-[450px] overflow-hidden relative">
-        <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(0px);">
-          <img class="rounded-2xl" src="./img/image-product-1.jpg" alt="">
+      <!-- menu -->
+      <ul class="flex">
+        <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Collections</a></li>
+        <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Men</a></li>
+        <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Women</a></li>
+        <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">About</a></li>
+        <li class="mr-[55px]"><a href="#" class="text-gray-700 hover:underline">Contact</a></li>
+      </ul>
+      <div class="flex flex-1 justify-end items-center">
+        <div class="mr-[45px]">
+          <a href="#">
+            <img src="./img/icon-cart.svg">
+          </a>
         </div>
-        <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(450px);">
-          <img class="rounded-2xl" src="./img/image-product-2.jpg" alt="">
-        </div>
-        <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(900px);">
-          <img class="rounded-2xl" src="./img/image-product-3.jpg" alt="">
-        </div>
-        <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(1450px);">
-          <img class="rounded-2xl" src="./img/image-product-4.jpg" alt="">
-        </div>
-      </div>
-      <div class="grid grid-cols-4 gap-[30px] mt-[30px]">
-        <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 border-4 rounded-xl border-orange-400"><img class="rounded-lg" src="./img/image-product-1-thumbnail.jpg" alt=""></button>
-        <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-2-thumbnail.jpg" alt=""></button>
-        <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-3-thumbnail.jpg" alt=""></button>
-        <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-4-thumbnail.jpg" alt=""></a>
-      </div>
-
-    </div>
-
-    <!--description-->
-    <div class="w-[450px] h-full">
-
-      <div class="mt-[66px]">
-        <h2 class="text-orange-500"> SNEAKER COMPANY</h2>
-        <h1 class="font-bold text-4xl my-8">Fall Limited Edition Sneakers</h1>
-        <h3 class="text-gray-600 mt-3 mb-11">These low-profiles sbeakers are your perfect casual wear companion. Featureing a durable rubber outer sole, they'll withstand everything the weather can offer.</h3>
-        <div class="flex item-center">
-          <span class="font-bold text-2xl">$125.00</span><span class="inline-block text-orange-500 font-bold mx-3 p-[3px] bg-orange-200 rounded-md ">50%</span><br/>
-        </div>
-        <span class="font-bold text-md text-gray-300 line-through my-4 inline-block">$250</span>
-
-        <div class="flex gap gap-3">
-          <div class="flex flex-1 items-center justify-between w-[40%] bg-gray-100 font-blod text-xl rounded-lg">
-            <button class="w-[30%]">-</button>
-            <span class="">0</span>
-            <button class="w-[30%]">+</button>
-          </div>
-          <a href="#" class="flex flex-2 items-center justify-center w-[60%] bg-orange-400 h-16 rounded-lg">
-            <svg class="fill:white" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="white" fill-rule="nonzero"/></svg>
-            <span class="text-white mx-4">Add to cart</span>
+        <div class="w-[50px]">
+          <a href="#">
+            <img class="w-[50px]" src="./img/image-avatar.png">
           </a>
         </div>
       </div>
+    </nav>
+  </header>
+
+  <!-- container -->
+  <div class="flex flex-col xl:flex-row items-center max-w-6xl m-auto xl:mt-20 mb-20 xl:space-x-11 space-y-5 xl:space-y-0">
+
+    <!--gallery-->
+    <div class="flex-1">
+      <div class="flex flex-col space-y-5">
+        <div class="xl:max-w-md xl:h-[448px] xl:rounded-xl overflow-hidden relative">
+          <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(0px);">
+            <img src="./img/image-product-1.jpg" alt="">
+          </div>
+          <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(450px);">
+            <img src="./img/image-product-2.jpg" alt="">
+          </div>
+          <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(900px);">
+            <img src="./img/image-product-3.jpg" alt="">
+          </div>
+          <div class="img-wrap absolute transition duration-300 ease-in-out" style="transform: translateX(1450px);">
+            <img src="./img/image-product-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="space-x-5 max-w-md hidden xl:flex">
+          <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 border-2 rounded-xl border-orange-400"><img class="rounded-lg" src="./img/image-product-1-thumbnail.jpg" alt=""></button>
+          <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-2-thumbnail.jpg" alt=""></button>
+          <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-3-thumbnail.jpg" alt=""></button>
+          <button class="tmb-btn block hover:cursor-pointer hover:opacity-100 opacity-50"><img class="rounded-lg" src="./img/image-product-4-thumbnail.jpg" alt=""></a>
+        </div>
+      </div>
     </div>
 
+    <!--description-->
+    <section class="flex-1 space-y-8 max-w-xl px-4 xl:p-0">
+      <p class="text-orange-500"> SNEAKER COMPANY</p>
+      <h1 class="font-bold text-4xl my-8">Fall Limited Edition Sneakers</h1>
+      <p class="text-gray-500">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer
+        sole. they'll withstand everything the weather can offer</p>
+
+      <div class="flex flex-row xl:flex-col justify-between items-center xl:items-start">
+        <div class="flex items-center space-x-4">
+            <h2 class="text-4xl font-bold">$125.00</h2>
+            <p class="text-orange-500 font-bold bg-orange-100 py-1 px-2 rounded-lg ">50%</p>
+        </div>
+        <del class="text-gray-400 font-semibold">$250.00</del>
+      </div>
+
+      <div class="flex gap gap-3">
+        <div class="flex flex-1 items-center justify-between w-[40%] bg-gray-100 font-blod text-xl rounded-lg">
+          <button class="w-16 h-16 text-orange-500 flex justify-center items-center">
+              <i>
+                <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <path
+                            d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                            id="a" />
+                    </defs>
+                    <use fill="currentcolor" fill-rule="nonzero" xlink:href="#a" />
+                </svg>
+            </i>
+          </button>
+          <p class="flex text-center">0</p>
+          <button class="w-16 h-16 text-orange-500 flex justify-center items-center">
+            <i>
+              <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path
+                          d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                          id="b" />
+                  </defs>
+                  <use fill="currentcolor" fill-rule="nonzero" xlink:href="#b" />
+              </svg>
+          </i>
+          </button>
+        </div>
+        <a href="#" class="flex flex-2 items-center justify-center w-[60%] bg-orange-400 h-16 rounded-lg">
+          <svg class="fill:white" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="white" fill-rule="nonzero"/></svg>
+          <span class="text-white mx-4">Add to cart</span>
+        </a>
+      </div>
+    </section>
+
   </div>
-</div>
+</main>
 
 <script src="./gallery.js"></script>
 </body>
